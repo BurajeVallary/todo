@@ -1,0 +1,75 @@
+body {
+    font-family: Josefin Sans;
+    background-color: #124aa1;;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+.todo-list {
+    margin: 50px auto;
+    max-width: 400px;
+    padding: 70px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
+h1 {
+    text-align: center;
+    color:#124aa1;
+    font-size: 50px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    
+    padding-right: 160px;
+}
+.high{
+    color: hsl(217, 57%, 5%);
+}
+
+.add-btn {
+    display: block;
+    margin-top: -3em;
+    padding: 5px;
+    background-color: #124aa1;;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 90%;
+    width: 15%;
+}
+
+.delete-icon {
+    margin-left: 10px;
+    cursor: pointer;
+    height: 30%;
+    width: 5%;
+}
+
+.success-message {
+    color: rgb(18, 144, 207);
+}
+
+@media (max-width: 560px) {
+    .container {
+      width: 90%;
+      height: 60vh;
+    }
+    .controls {
+      gap: 20px;
+    }
+  }
