@@ -1,20 +1,25 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Todo List App</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-  <div class="todo-list">
-    <h1> <span class="high">ToDo</span>List </h1>
-    <form id="form">
-      <input type="text" id="new-task" placeholder="Create a new to do.." required>
-      <button type="submit" class="add-btn">Add Task</button>
+    <form class="form" id="form">
+    <h1 class="todo-list">Vallary's To-Do</h1>
+  <input id="taskId" type="number" placeholder="User Id">
+  <span><button id="add" type="button">Add</button></span>
+  <br><br>
+  <ul id="lists"></ul>
+  
+  <div id="successMessage"></div>
     </form>
-    <ul id="task"></ul>
-  </div>
-  <script src="app.js"></script>
+    <script src="app.js"></script>
 </body>
-</html>
+

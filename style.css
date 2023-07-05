@@ -1,75 +1,76 @@
+
+
 body {
-    font-family: Josefin Sans;
-    background-color: #124aa1;;
-    width: 100vw;
-    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
   }
-.todo-list {
-    margin: 50px auto;
-    max-width: 400px;
-    padding: 70px;
-    border: 1px solid #ccc;
+  
+  .form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
     border-radius: 5px;
-    background-color: whitesmoke;
-}
-
-h1 {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .todo-list {
     text-align: center;
-    color:#124aa1;
-    font-size: 50px;
-}
-
-ul {
+    color: #333;
+  }
+  .add{
+    width: 2%;
+    height: 1%;
+    padding: 2px;
+  }
+  
+  #taskId {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+  
+  #add {
+     background-color: #4caf50; 
+     color: #fff;
+    border: none;
+    /* padding: 10px 20px;
+    cursor: pointer; */ 
+  } 
+  
+  #add:hover {
+    background-color: #45a049;
+  }
+  
+  #lists{
     list-style-type: none;
     padding: 0;
-}
-
-li {
-    margin-bottom: 10px;
+    margin: 0;
+  }
+  
+  .task {
     display: flex;
     align-items: center;
-}
-
-input[type="text"] {
-    flex: 1;
-    padding: 10px;
-    
-    padding-right: 160px;
-}
-.high{
-    color: hsl(217, 57%, 5%);
-}
-
-.add-btn {
-    display: block;
-    margin-top: -3em;
-    padding: 5px;
-    background-color: #124aa1;;
+    margin-bottom: 10px;
+   
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  button {
+    background-color: #f44336;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    padding: 5px 10px;
     cursor: pointer;
-    margin-left: 90%;
-    width: 15%;
-}
-
-.delete-icon {
-    margin-left: 10px;
-    cursor: pointer;
-    height: 30%;
-    width: 5%;
-}
-
-.success-message {
-    color: rgb(18, 144, 207);
-}
-
-@media (max-width: 560px) {
-    .container {
-      width: 90%;
-      height: 60vh;
-    }
-    .controls {
-      gap: 20px;
-    }
   }
+  
+  button:hover {
+    background-color: #e53935;
+  }
+  
